@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+::placeholder {
+    color: var(--green);
+    font-size: var(--xs);
+    font-style: italic;
+    opacity: 1; 
+}
+.title {
+    width: 100%;
+    color: var(--brown);
+    font-size: var(--xl);
+    margin-bottom: 8px;
+    text-align: center;
+}
+.subtitle {
+    width: 100%;
+    color: var(--green);
+    font-size: var(--md);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+}
+h4 {
+    color: var(--brown);
+    margin: 0 0 4px 0;
+}
+.container {
+    background-color: var(--ligth-beige);
+    border-radius: 12px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.primary-button {
+    background-color: var(--ligth-blue);
+    border-radius: 8px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--brown);
+    font-size: var(--md);
+    font-weight: bold;
+    cursor: pointer;   
+}
+.secondary-button {
+    background-color: var(--green);
+    border-radius: 8px;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--ligth-beige);
+    font-size: var(--xs);
+    font-weight: bold;
+    cursor: pointer;
+}
+.terciary-button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--brown);
+    font-size: var(--xs);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.label {
+    color: var(--brown);
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.input {
+    background-color: var(--ligth-grey);
+    color: var(--green);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 6px;
+    margin-bottom: 12px;
+}

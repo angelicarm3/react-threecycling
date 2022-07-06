@@ -1,0 +1,33 @@
+.send-offer-buyer {
+    width: 100%;
+    height: 290px;
+    display: grid;
+}
+.send-offer {
+    width: 300px;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 90%;
+}
+.new-offer {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: var(--brown);
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+.input-new-offer {
+    height: 100px;
+}
+.send-button {
+    margin-top: 14px;
+    margin-bottom: 4px;
+    text-align: center;
+}

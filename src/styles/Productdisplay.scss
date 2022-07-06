@@ -1,0 +1,30 @@
+.product-display {
+    background-color: var(--ligth-grey);
+    border-radius: 8px;
+    width: 40%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-template-areas: 'image product-info' 'estimated-value estimated-value';
+    column-gap: 20px;
+    place-items: center;
+}
+.image-container {
+    grid-area: image;
+}
+.product-image {
+    height: 110px;    
+}
+.info-product {
+    color: var(--brown);
+    grid-area: product-info;
+}
+.estimated-value {
+    grid-area: estimated-value;
+    justify-items: center;
+    width: 100%;
+    color: var(--orange);
+    font-size: var(--lg);
+    margin-bottom: 8px;
+    text-align: right;
+}

@@ -1,0 +1,31 @@
+.detail {
+    height: 270px;
+    align-items: initial;
+}
+.left-box {
+    display: grid;
+    grid-template-columns: 30% 66%;
+    grid-template-rows: 20% 75%;
+    grid-template-areas: "image estimated-value" "image product-description" "edit-button edit-button";
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.detail-image {
+    width: 70%;
+}
+.detail-value {
+    grid-area: estimated-value;
+    width: 100%;
+    color: var(--orange);
+    font-size: var(--lg);
+    margin-bottom: 8px;
+    text-align: right;
+}
+.detail-description {
+    grid-area: product-description;
+}
+.edit-button {
+    grid-area: edit-button;
+    margin-bottom: 4px;
+    text-align: right;
+}

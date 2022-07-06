@@ -1,0 +1,46 @@
+.product-info {
+    background-color: var(--ligth-grey);
+    color: var(--brown);
+    border-radius: 8px;
+    width: 90%;
+    height: 130px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: 'image product-name offers' 'image product-description offers';
+    column-gap: 20px;
+    place-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.image {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-name {
+    grid-area: product-name; 
+    margin: 8px 0 8px 0;
+    font-size: var(--lg);
+    font-weight: bold;   
+}
+.product-description {
+    grid-area: product-description;
+    margin: 8px 0 12px 0;
+}
+.offers {
+    grid-area: offers;
+    background-color: var(--orange);
+    color: var(--ligth-beige);
+    font-size: var(--xl);
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}

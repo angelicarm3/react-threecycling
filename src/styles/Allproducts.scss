@@ -1,0 +1,13 @@
+.products-container {
+    width: 90%;
+    height: auto;
+    
+}
+.products-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 20px;
+    column-gap: 20px;
+}
