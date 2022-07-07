@@ -1,19 +1,23 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '@styles/Productdisplay.scss'
-import productimage from '@icons/TVChallenger32.jpg'
 
-const Productdisplay = () => {
+const Productdisplay = ({product}) => {
     return (
-        <div className='product-display'>
-            <div className='image-container'>
-                <img src={productimage} alt='TVChallenger32.jpg' className='product-image'/>
-            </div>
-            <div className='info-product'>
-                <div className='product-name'>TV CHALLENGER 32"</div>
-                <div className="product-description">Con tu TV CHALLENGER de pantalla de 32” en resolución HD, tendrás una imagen realista y precisa con el tamaño ideal. Aprovecha sus puertos de entrada para conectar tus dispositivos a través de HDMI y USB. Estrena en casa lo que siempre soñaste usa r¡¡ Que esperas, NO te quedes sin el tuyo!!</div>
-            </div>
-            <div className='estimated-value'>$59.000</div>
-        </div>
+        <div className='display-product'>
+            <Link to='/detalle-producto' className='link detail-link'>
+                <button className='container-button product'>
+                    <div className='image-container'>
+                        <img src={product.images[0]} alt={product.title} className='product-image' />
+                    </div>
+                    <div className='info-product'>
+                        <div className='product-name'>{product.title}</div>
+                        <div className="product-description">{product.description}</div>
+                    </div>
+                    <div className='estimated-value'>${product.price}</div>
+                </button>
+            </Link>
+        </div> 
     );
 }
 

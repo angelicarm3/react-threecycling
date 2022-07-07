@@ -1,19 +1,20 @@
 import React from 'react';
-import '@styles/Allproducts.scss'
-import Productdisplay from '../components/Productdisplay'
+import useGetProducts from '@hooks/useGetProducts';
+import '@styles/Allproducts.scss';
+import Productdisplay from '@components/Productdisplay';
+
+const API = 'https://api.escuelajs.co/api/v1/products';
 
 const Allproducts = () => {
+    const products = useGetProducts(API);
+
     return (
         <div className='container products-container'>
             <h1 className='title'>CATEGORIA</h1>
             <div className='products-display'>
-                <Productdisplay />
-                <Productdisplay />
-                <Productdisplay />
-                <Productdisplay />
-                <Productdisplay />
-                <Productdisplay />
-                <Productdisplay />
+                {products.map(product => (
+                    <Productdisplay product={product} key={product.id} />
+                ))}                
             </div>
         </div>
     );

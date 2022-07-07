@@ -1,7 +1,9 @@
 .products-container {
     width: 90%;
     height: auto;
-    
+    position: absolute;
+    top: 260px;
+    align-self: center;
 }
 .products-display {
     display: flex;

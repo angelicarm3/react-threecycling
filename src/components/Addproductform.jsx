@@ -8,14 +8,14 @@ const Addproductform = () => {
             <h1 className='title'>Nuevo Producto</h1>
             <form action='/' className='product-form'>
                 <div className='form left-div'>
-                    <label htmlFor='product-name' className='label'>Nombre del producto</label>
-                    <input type='text' id='product-name' placeholder='Ingrese el nombre de su producto' className='input input-product-name' required />
-                    <label htmlFor='product-description' className='label'>Descripción del producto</label>
-                    <input type='text' id='product-description' placeholder='Describa su producto' className='input input-product-description' required />
-                    <label htmlFor='estimated-value' className='label'>Valor estimado</label>
-                    <input type='number' id='estimated-value' placeholder='Ingrese valor en numeros' className='input input-estimated-value' required />
-                    <label htmlFor='category' className='label'>Categoría</label>
-                    <select id="category" name="category">
+                    <label htmlFor='name' className='label'>Nombre del producto</label>
+                    <input type='text' id='name' placeholder='Ingrese el nombre de su producto' className='input input-product-name' required />
+                    <label htmlFor='description' className='label'>Descripción del producto</label>
+                    <input type='text' id='description' placeholder='Describa su producto' className='input input-product-description' required />
+                    <label htmlFor='price' className='label'>Valor estimado</label>
+                    <input type='number' id='price' placeholder='Ingrese valor en numeros' className='input input-estimated-value' required />
+                    <label htmlFor='categoryid' className='label'>Categoría</label>
+                    <select id="categoryid" name="category">
                         <option value="">Seleccione una categoría</option>
                         <option value="plastic">Plástico</option>
                         <option value="paper-board">Papel/Cartón</option>
@@ -33,8 +33,8 @@ const Addproductform = () => {
                         </div>
                     </div>
                     <div className='browse-image'>
-                        <label htmlFor='product-image' className='upload-button'>Seleccione la imagen</label>
-                        <input type='file' id='product-image' className='input-product-image' />
+                        <label htmlFor='image' className='upload-button'>Seleccione la imagen</label>
+                        <input type='file' id='image' className='input-product-image' />
                     </div>
                 </div>
                 <div className='save-button'>

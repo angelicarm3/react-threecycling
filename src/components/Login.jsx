@@ -1,5 +1,6 @@
-import React from 'react'
-import '@styles/Login.scss'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import '@styles/Login.scss';
 
 const Login = () => {
     return (
@@ -10,13 +11,15 @@ const Login = () => {
                 <label htmlFor='password' className='label'>Contraseña</label>
                 <input type='password' id='password' placeholder='********' className='input input-password' required />
                 <div className='log-in-button'>
-                        <input type='submit' value='Aceptar' className='primary-button' />
+                    <input type='submit' value='Aceptar' className='primary-button' />
                 </div>
             </form>
-            <div className='sign-in-link'>Si no tienes una cuenta 
-                <button className='terciary-button'>
-                    Registrate
-                </button>
+            <div className='sign-in-link'>Si no tienes una cuenta
+                <Link to='/registro' className='link offers-link'>
+                    <button className='terciary-button'>
+                        Registrate
+                    </button>
+                </Link>
             </div>
         </div>
     );
